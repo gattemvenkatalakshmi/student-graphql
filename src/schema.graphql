@@ -1,0 +1,37 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Student {
+  name: String!
+  roll_number: Int!
+  class: String!
+  section: String!
+  address: String!
+  phone_number: String!
+  subjects: String!
+  aadhaar_number: String!
+  date_of_birth: String!
+  gender: String!
+}
+
+type Query {
+  index: String!
+}
+
+type Mutation {
+  getStudentsByFields(fields: StudentFieldsInput!): [Student!]!
+}
+
+input StudentFieldsInput {
+  name: String
+  roll_number: Float
+  class: String
+  section: String
+  address: String
+  phone_number: String
+  subjects: String
+  aadhaar_number: String
+  date_of_birth: String
+  gender: String
+}
